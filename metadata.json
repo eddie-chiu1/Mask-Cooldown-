@@ -1,0 +1,7 @@
+  {
+    "name": "maskcdtimers",
+    "creator": "lunfi",
+    "description": "tracks invincibility timers",
+    "version": "1.0.0",
+    "entry": "index.js"
+  }
