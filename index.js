@@ -33,7 +33,8 @@ register("renderOverlay", () => {
         if (remaining > 0) {
             text = `&c${name}: ${remaining.toFixed(1)}s`
         } else {
-            text = `&a${name}: READY`
+            // text = `&a${name}: READY`
+            text = ""
         }
 
         Renderer.drawStringWithShadow(ChatLib.addColor(text), 10, y)
