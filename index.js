@@ -1,4 +1,3 @@
-// index.js
 
 // cooldown
 const cooldowns = {
@@ -37,7 +36,7 @@ register("renderOverlay", () => {
             text = ""
         }
 
-        Renderer.drawStringWithShadow(ChatLib.addColor(text), 10, y)
+        Renderer.drawString(ChatLib.addColor(text), 10, y)
         y += 12
     })
 })
@@ -46,3 +45,6 @@ register("renderOverlay", () => {
 register("worldUnload", () => {
     Object.values(cooldowns).forEach(c => c.lastUsed = 0)
 })
+
+// chat on launch to make sure it loads lmfao
+ChatLib.chat(`&a[maskcd] Module loaded successfully.`);
